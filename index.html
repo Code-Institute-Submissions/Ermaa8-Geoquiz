@@ -24,10 +24,75 @@
     <!--INFO BOX-->
     <div class="info-box">
         <div class="info-title">
-        <span>Rules of the Game</span>
-    </div>
-    
-    <script src="assets/js/script.js"></script>
+            <span>Rules of the Game</span>
+        </div>
+        <!--List containing the rules-->
+        <div class="info-list">
+            <div class="info">
+                <span class="info-num">1.</span>
+                <span>10 seconds</span>
+                is all the tine you've got to answer, per each question.
+            </div>
+            <div class="info">
+                <span class="info-num">2.</span>
+                Once the clock runs out, you can't make any changes.
+                <br>
+                <span>Choose wisely!</span>
+            </div>
+            <div class="info">
+                <span class="info-num">3.</span>
+                Once you've selected your answer,
+                <span>there's no going back.</span>
+            </div>
+            <div class="info">
+                <span class="info-num">4.</span>
+                No escape routes here! You can
+                <span>not exit</span>
+                from the Quiz while you're playing.
+            </div>
+            <div class="info">
+                <span class="info-num">5.</span>
+                Score big by nailing those correct answers! -
+                <span>Let the game begin!</span>
+            </div>
+        </div>
+        <!--Buttons for exiting or continuing the game-->
+        <div class="buttons">
+            <button class="quit-btn">Exit</button>
+            <button class="restart-btn">Continue</button>
+        </div>
+        </div>
+        <!--Header for Correct Question and Timer-->
+        <header>
+            <div class="question-count">
+                Question
+                <span id="current question">0</span>
+                /
+                <span id="total-question">10</span>
+            </div>
+            <div class="timer">
+                <!--Displaying Timer from JS-->
+                <div class="time-text">Time</div>
+                <div class="timer-sec"></div>
+            </div>
+            <!--Animated Time Line fron JS-->
+            <div class="time-line"></div>
+        </header>
+        <!--Section for Question and Options-->
+        <section>
+            <div class="quiz-container">
+                <!--Display the question from JS-->
+                <h2 id="question">Question displayed</h2>
+                <div class="answer-options">
+                    <!--Display answer options from JS-->
+                    <button class="answer-btn">Answer 1</button>
+                    <button class="answer-btn">Answer 2</button>
+                    <button class="answer-btn">Answer 3</button>
+                    <button class="answer-btn">Answer 4</button>
+                </div>
+            </div>
+        </section>
+        <script src="assets/js/script.js"></script>
 
 </body>
 
