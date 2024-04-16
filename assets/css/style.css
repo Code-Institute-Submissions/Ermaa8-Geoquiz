@@ -8,3 +8,113 @@
     box-sizing: border-box;
     font-family: "Actor", sans-serif; /* Set default font family */;
 }
+
+/* Background image and General styles */
+body {
+    height: 100vh;
+    width: 100%;
+    background: ur("../images/background.webp") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #3a3a3a;
+    font-family: "Sedan", sans-serif;
+}
+
+::selection {
+    /* Highlights the part of the document that has been clicked and draged by the user */
+    color: #faebd7;
+    background-color: #82820f;
+}
+
+/* HEADING */
+.title-container {
+    margin: 60px 5%;
+    padding: 15px;
+    background-color: #faebd7;
+    border-style: solid;
+    box-shadow: 0 5px 10px rgba(59, 59, 59, 0.8);
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Salsa", sans-serif;
+    font-size: 2.5 rem;
+    color: #82820f;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.title-container.hide {
+    display:none;
+}
+
+/* Positioning all the boxes Absolute, in the center of the page */
+.start-btn,
+.info-box,
+.quiz-box,
+.result-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(58, 58, 58, 0.8);
+}
+
+/* Being able to control the boxes appearance and behavior transition with JS by adding an active class */
+ .info-box.qctiveInfo,
+ .info-box.activeQuiz,
+ .result-box.activeResult {
+    opacity: 1; /* Make the elements visible */
+    z-index: 5; /* Keeping the elements on top of the others elements */
+    pointer-events: auto; /* Make elements clickable */
+    transform: translate(-50%, -50%) scale(1); /* Keep elements appearing  in the center of the page */
+ }
+
+ /* START BUTTON */
+ .start-btn button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #faebd7;
+    background: #82820f;
+    padding: 15px 30px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    outline: none; /* Remove the default focus style */
+    cursor: pointer; /* Set cursor to pointer for better user interaction feedback */
+ }
+
+ .start-btn button:hover {
+    background: #ff5a4e;
+ }
+
+ /* INFO BOX */
+ .info-box {
+    width: 90%;
+    max-width: 600px;
+    background: #faebd7;
+    opacity: 0;
+    transition: all 0.3s ease; /* To make the transition smooth */
+    pointer-events: none; /* Make the elements unclickable */
+    transform: translate(-50%, -50%) scale(0.9); /* Giving the element a slightly smaller size than its original dimensions for visual effents */
+ }
+
+ /* Title styles Info Box */
+ .info-box .info-title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 5px 5px 0 0; /* Keep the rounded corner effect */
+    box-shadow: 0 0 5px rgba(58, 58, 58, 0.2);
+    font-size: 1.5rem;
+    font-weight: bold;
+ }
+
+ .info-box .info-title span {
+    font-family: "Salsa", sans-serif;
+ }
