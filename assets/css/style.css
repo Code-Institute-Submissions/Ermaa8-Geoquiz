@@ -118,3 +118,452 @@ h1 {
  .info-box .info-title span {
     font-family: "Salsa", sans-serif;
  }
+
+ /* Styes for the info text */
+ .info-box .info-list {
+    padding: 15px 20px;
+    line-height: 1.3; /* Increase readability */
+    text-align: left;
+    font-size: 1.1rem;
+ }
+
+.info-box .info {
+    margin-bottom: 5px; /* Increase readability between rules divs */
+}
+
+.info-box .info-list .info-num {
+    font-size: 1.4rem;
+    color: #3a3a3a;
+}
+
+/* Highlight the important info in the text */
+.info-box .info-list span {
+    font-weight: 600;
+    color: #82820f;
+}
+/* Styles for Exit and Continue Buttons */
+.info-box .buttons {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    border-top: 2px solid #3a3a3a;
+    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
+}
+
+.info-box .buttons button {
+    font-family: "Salsa", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #faebd7;
+    background:#82820f;
+    padding: 15px 20px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    outline: none; /* Remove the default focus style */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.info-box .buttons .quit-btn {
+    padding: 15px 40px;
+    margin-right: 15px;
+}
+
+/* QUIZ BOX */
+
+.quiz-box {
+    width: 80%;
+    max-width: 700px;
+    top: 50%;
+    background: #faebd7;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none; /* Make the elements unclickable */
+    transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 0 0 5px 5px rgb(58, 58, 58); /* Gives a 3D effect behind the container */
+}
+
+/* Header in the Quiz box */
+.quiz-box header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative; /* Position the timer */
+    z-index: 2; /* Keep the element on top of the other elements */
+    box-shadow: 0 3px 5px 1px rgba(58, 58, 58, 0.3);
+}
+
+/* Question Counter */
+.quiz-box header .question-count {
+    font-family: "Salsa", sans-serif;
+    font-size: 1.2rem;
+    margin-left: -10px;
+    padding-left: 5px;
+}
+
+.quiz-box header .question-count span {
+    font-family: "Salsa", sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Timer box */
+.quiz-box header .timer {
+    width: 145px; /* Set a fixed width for the timer */
+    margin-left: auto; /* Auto margin to push the timer to the right */
+    padding: 5px 10px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    background: #82820f;
+    color: #faebd7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Timer text */
+.quiz-box header .timer .time-text {
+    font-family: "Salsa", sans-serif;
+    font-size: 1.2rem;
+    user-select: none; /* Prevent the user from selecting the text */
+    white-space: nowrap; /* Prevent text from wrapping to the next line*/
+}
+
+/* Timer Number */
+.quiz-box header .timer .timer-sec {
+    font-family: "Salsa", sans-serif;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #3a3a3a;
+    text-align: center;
+    user-select: none; /* Prevent the user from selecting the numbers */
+}
+
+/* Timer Line - Animamtion in JS */
+.quiz-box .time-line {
+    height: 4px;
+    width: 100%;
+    position: absolute; /* Position the line Absolute, at the bottom of header */
+    bottom: 0;
+    left: 0;
+    background: #3a3a3a;
+}
+
+/* Main Section in the Quiz Box, Question and Answers */
+section {
+    padding: 25px 30px 20px 30px;
+}
+
+/* Question */
+section .quiz-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Answers */
+section .answer-options .answer-btn {
+    background-color: #faebd7;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Removes hover effect whenever user clicked on an answer */
+section .answer-options .answer-btn:hover:not([disabled]) {
+    background: #82820f;
+    color: #faebd7;
+}
+
+/* Styles for correct and incorrect answers */
+section .answer-options .answer-btn.correct {
+    background: #60a561;
+    color: #faebd7;
+    border: 1px solid #faebd7;
+}
+
+section .answer-options .answer-btn.incorrect {
+    background: #ff5a4e;
+    color: #faebd7;
+    border: 1px solid #faebd7;
+}
+
+section .answer-options .answer-btn.disabled {
+    pointer-events: none; /* It will not possible to click other buttons */
+}
+
+/* Footer of Quiz box */
+footer {
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #3a3a3a;
+    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
+}
+
+/* Styling for the current score */
+footer .current-score {
+    margin-left: 10px;
+}
+
+footer .current-score p {
+    font-family: "salsa", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    user-select: none; /* Not selectable */
+}
+
+footer .current-score span {
+    font-family: "salsa", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* RESULT BOX */
+
+.result-box {
+    top: 50%;
+    width: 85%;
+    max-width: 600px;
+    background: #faebd7;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.5);
+}
+
+/* Image */
+.result-box img {
+    width: 125px;
+    height: 125px;
+    margin: 20px 0;
+}
+
+/* Title */
+.result-box .reult-title {
+    font-size: 2rem;
+    font-family: "Salsa", sans-serif;
+    font-weight: bold;
+    color: #82820f;
+    margin-bottom: 20px;
+}
+
+/* Styling for the score inside the result box */
+.result-box .final-score span {
+    font-family: "Salsa", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-box .final-score span div {
+    font-family: "Salsa", sans-serif;
+    font-size: 1.3rem;
+    padding: 0 5px;
+    margin: 10px 0; /* Adding some margin between the lines */
+}
+
+/* Result Box Buttons */
+.result-box .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.result-box .buttons button {
+    font-family: "Salsa" sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #faebd7;
+    background: #82820f;
+    margin: 0 10px;
+    padding: 15px 20px;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.buttons button.quit-btn {
+    background: #ff5a4e;
+    padding: 0 25px;
+}
+
+.buttons button.quit-btn:hover {
+    background: #faebd7;
+    color: #ff5a4e;
+}
+
+.buttons button.restart-btn:hover {
+    background: #faebd7;
+    color: #82820f;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faebd7;
+    color: #3a3a3a;
+    border-top: 2px solid #3a3a3a;
+    padding: 20px 0;
+}
+
+.page-footer.hide {
+    display: none;
+}
+
+.copywrite {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Keyframe animation for a shaking effect 
+* Credits: Dane Parchment -See further in the README file. */
+@keyframes shake {
+    /* At 10% and 90% of the animation duration, translate the element to the left by 1px */
+    10%
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    /* At 20% and 80%, translate the element to the right by 2px */
+    20%
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    /* At 30%, 50%, and 70%, translate the element to the left by 4px */
+    30%
+    50%
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    /* At 40% and 60% translate the element to the right by 4px */
+    40%
+    60% {
+        transform: translate3d(-4px, 0, 0);
+    }
+}
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) {
+
+    /* Heading */
+    .title-container {
+        margin: 15px 5%;
+    }
+
+    /* Start button */
+    .start-btn {
+        top:55%
+    }
+
+    .start-btn button {
+        padding: 10px;
+    }
+
+    /* Info-box */
+    .info-box .info-list {
+        font-size: 1rem;
+    }
+
+    .info-box .info-list .info-num {
+        font-size: 1rem;
+    }
+
+    /* Quiz box */
+    section .quiz-container h2 {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    section .answer-options .answer-btn {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Result box */
+    .result-box .result-title {
+        font-size: 1.2rem;
+    }
+
+    .result-box .final-score span div {
+        font-size: 1.1rem;
+    }
+
+    .result-box .buttons button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+
+    /* Heading */
+    .title-container {
+        margin: 15px 5%;
+    }
+    
+    /* Info-box */
+    .info-box {
+        top: 53%;
+    }
+
+    /* Quiz box */
+    section .answer-options .answer-btn {
+        font-size: 0.7rem;
+        padding: 5px;
+        margin: 3px;
+    }
+    
+    #question {
+        height: 25px;
+        font-size: 1rem;
+    }
+
+    /* Result box */
+    .result-box.activeResult {
+        margin-top: 15px;
+    }
+
+    .result-box .final-score span div {
+        margin: 0px;
+    }
+}
