@@ -18,5 +18,57 @@ Table of content
  
  - ### First Time User
  - As a firt time user I want to understand purpose of this quiz.
- - 
+ - As a first time user I want to have fun with this quiz and learn something new.
 
+ - ### Returning user
+ - As a returning user i want to be able to play same quiz without getting same questions in same order.
+ - As a returning user I want to save my correct answers.
+
+ - ### Frequent user
+ - As a frequent user I want to beat my score.
+
+ ## Design
+ - The quiz design is fun
+
+ ### Fonts
+
+ ### Layout
+
+ ### Wireframes
+
+ ## Features
+
+### Home Page
+
+### Rues Page
+
+### Quiz Selection
+
+## Testing
+
+### Validator Testing
+- #### HTML
+- #### CSS
+- #### Javascript
+
+### Accessibility 
+
+### Button Testing
+
+### Game Testing
+
+### Browser Testing
+
+### Fixed Bugs
+
+## Technologies Used
+### Languages
+-HTML
+-CSS
+-JavaScript
+
+### Frameworks - Libraries - Programs Used
+
+## Deployment
+
+## Acknowledgments
