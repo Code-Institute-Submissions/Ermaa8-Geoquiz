@@ -262,4 +262,115 @@ function startTimer() {
     }, 1000); //Repeat every 1 second (1000 miliseconds)
 }
 
+/**
+ * Initializes the timer line and updates its width until reaching 100% or when an answer is selected.
+ * Stops the timer when the width reaches 100% or when an answer is selected
+ */
+function startTimerLine() {
+    let time = 0;
+    clearInterval(timerLine);
+    timerLine = setInterval(timer, 100);
+    //Increments the time by 1 on each interval, updated the width of the time line element
+    function timer() {
+        time +=1;
+        timeLineElement.computedStyleMap.width = time + "%";
 
+        if (time >= 100) {
+            clearInterval(timerLine);
+        }
+    }
+}
+
+/**
+ * Displays the current question and its answer options to the user.
+ * Updates the question number and displays the question text.
+ * Shuffles answer options and displays them as buttons.
+ * Sets event listeners for answer buttons to handle user selection.
+ */
+function selectAnswer(e) {
+    let selectBtn = e.target;
+    let isCorrect = selectedBtn.dataset.correct === "true";
+
+    clearInterval(timerInterval); //Stop the timer when any answer buttons are clicked
+    clearInterval(timerLine); //Stop the timer line when any answer buttons are clicked'
+
+    // Add appropriate classes and uppdate scores based on correctness of the selected answer
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+        correctScore++;
+        document.getElementById("correct-score").textContent =correctScore;
+    }else {
+        selectedBtn.classList.add("incorrect");
+        selectedBtn.classList.add("apply-shake"); //Add shake animation class to incorrect answer button
+        incorrectScore++;
+        document.getElementById("incorrect-score").textContent = incorrectScore:
+    }
+    //Disable all answer buttons and highlight the correct one
+    Array.from(answerOptions.children).forEach((button) => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    setTimeout(showNextQuestion, 1500); //Show next question after 1,5sec
+}
+/**
+ * Display the next question or show the result if all questions have been answered.
+ */
+function showNextQuestion() {
+    if (currentQuestionIndex < questions.length - 1) {
+        showQuestions();
+        startTimer();
+        startTimerLine();
+    } else {
+        // If there are no more questions remaining, show the result box
+        showResult();
+    }
+}
+
+// RESULT BOX
+
+/**
+ * Displays the result of the quiz to the user.
+ * Removes the activeInfo class from infoBox and activeQuiz class from quizBox.
+ * Adds the activeResult class to resultBox to display the result.
+ * Determines the score message based on the number of correct answers.
+ * Updates the final score element with the score message.
+ */
+function showResult() {
+    infoBox.classList.remove("activeInfo");
+    quizBox.classList.remove("activeQuiz");
+    resultBox.classList.add(activeResult);
+
+let finalScoreElement = resultBox.querySelector(".final-score");
+let scoreMessage;
+// Determine the score message based on the number of correct answers
+if (correctScore <= 4) {
+    scoreMessage = '<span>You mushed<div>' + correctScore + 'out of' + questions.length + '</div><div>Ohh! You need more practice!</div><span>';
+} else if (correctScore >= 6 && correctScore <= 8) {
+    scoreMessage = '<span>You mushed<div>' + correctScore + 'out of' + questions.length + '</div><div>Good Job! <br> Just a little bit more now!</div><span>';
+}else if (correctScore >= 6 && correctScore <= 12) {
+    scoreMessage = '<span>You mushed<div>' + correctScore + 'out of' + questions.length + '</div><div>AWESOME! <br> You know geography well!</div><span>';
+}
+finalScoreElement.innerHTML = scoreMessage;
+}
+
+// Event listener for the Quit quiz button, reloads the window to restart the quiz upon click
+quitBtn.onclick = () => {
+    window.location.reload();
+};
+
+//Event listener for the Play again button
+restartBtn.onclick = () => {
+    // Remove the result box and show the quiz box
+    resultBox.classList.remove("activeResult");
+    quizBox.classList.add("activeQuiz");
+    // Reset question index and scores
+    currentQuestionIndex = 0;
+    currentScore = 0;
+    incorrectScore = 0;
+    // Display the first question and start the timer and timer line
+    showQuestions();
+    startTimer();
+    startTimerLine();
+};
