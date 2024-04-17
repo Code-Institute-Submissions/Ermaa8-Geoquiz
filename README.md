@@ -8,8 +8,15 @@ The live link can be found here - [The Animal asotiation game]()
 Table of content
  * [Site Owner Goals](#site-owner-goals)
 
- ##Site owner goals
+ ## Site owner goals
  - To provide the user an easy to navigate the quiz that is fun and educational.
  - Ivoke a sence of urgency to complete the game as quick as possible.
  - To get the user answer as many rights as possible.
  - To present the user with a website that is visually appealing.
+
+ ## User Stories
+ 
+ - ### First Time User
+ - As a firt time user I want to understand purpose of this quiz.
+ - 
+
