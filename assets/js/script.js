@@ -1,5 +1,5 @@
 // Selected DOM elements
-const heading = document.querySelector("tite-cntainer");
+const heading = document.querySelector("tite-container");
 const startBtn = document.querySelector(".start-btn button");
 const infoBox = document.querySelector(".info-box");
 const exitBtn = infoBox.querySelector(".buttons .quit-btn");
@@ -20,7 +20,7 @@ let timeInterval; // Interval for the timer countdown
 let timerLine; // Interval for the timer line animation
 let currentQuestionIndex = 0; // Index of the current question
 let correctScore = 0; // Number of correctly answered questions
-letincorrectScore = 0; // Number of incorrectly answered questions
+let incorrectScore = 0; // Number of incorrectly answered questions
 
 // START BUTTON
 
@@ -58,11 +58,11 @@ continueBtn.onclick = () => {
 
 /**
  * Shuffles the order of elements in an array
- * Using the Fisher-Yates shuffle algorithm. */
+ * Using the Fisher-Yates shuffle algorithm. 
+ */
 function shuffle(array) {
     let currentIndex = array.length,
-        randomIndex;
-}
+    randomIndex;
 
 //While there remain elements to shuffle.
 while (currentIndex > 0) {
@@ -77,7 +77,7 @@ while (currentIndex > 0) {
     ];
 }
 
-return array; {
+return array; 
 
 }
 
