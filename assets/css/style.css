@@ -21,10 +21,8 @@ body {
     font-family: "Sedan", sans-serif;
 }
 
-::selection {
-    /* Highlights the part of the document that has been clicked and draged by the user */
-    color: #faebd7;
-    background-color: #82820f;
+.hidden{
+    display: none;
 }
 
 /* HEADING */
@@ -45,32 +43,21 @@ h1 {
     margin: 0;
 }
 
-.title-container.hide {
-    display:none;
-}
-
 /* Positioning all the boxes Absolute, in the center of the page */
-.start-btn,
-.info-box,
-.quiz-box,
-.result-box {
+
+.info-box{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
     box-shadow: 0 5px 10px rgb(58, 58, 58, 0.8);
+    width: 90%;
+    max-width: 600px;
+    background: #faebd7;
+    transition: all 0.3s ease; /* To make transition smooth */
+    transform: translate(-50%, -50%) scale(0.9); /* Giving the element a slightly smaller size than its original dimension for visual effents */
 }
-
-/* Being able to control the boxes appearance and behavior transition with JS by adding an active class */
- .info-box.qctiveInfo,
- .info-box.activeQuiz,
- .result-box.activeResult {
-    opacity: 1; /* Make the elements visible */
-    z-index: 5; /* Keeping the elements on top of the others elements */
-    pointer-events: auto; /* Make elements clickable */
-    transform: translate(-50%, -50%) scale(1); /* Keep elements appearing  in the center of the page */
- }
 
  /* START BUTTON */
  .start-btn button {
@@ -83,6 +70,7 @@ h1 {
     border-radius: 5px;
     outline: none; /* Remove the default focus style */
     cursor: pointer; /* Set cursor to pointer for better user interaction feedback */
+    margin-bottom: 10px;
  }
 
  .start-btn button:hover {
@@ -90,16 +78,7 @@ h1 {
  }
 
  /* INFO BOX */
- .info-box {
-    width: 90%;
-    max-width: 600px;
-    background: #faebd7;
-    opacity: 0;
-    transition: all 0.3s ease; /* To make the transition smooth */
-    pointer-events: none; /* Make the elements unclickable */
-    transform: translate(-50%, -50%) scale(0.9); /* Giving the element a slightly smaller size than its original dimensions for visual effents */
- }
-
+ 
  /* Title styles Info Box */
  .info-box .info-title {
     height: 60px;
@@ -365,7 +344,7 @@ footer .current-score span {
 }
 
 /* Title */
-.result-box .reult-title {
+.result-box .result-title {
     font-size: 2rem;
     font-family: "Salsa", sans-serif;
     font-weight: bold;
@@ -450,7 +429,7 @@ footer .current-score span {
 }
 
 /* Keyframe animation for a shaking effect 
-* Credits: Dane Parchment -See further in the README file. */
+*/
 @keyframes shake {
     /* At 10% and 90% of the animation duration, translate the element to the left by 1px */
     10%
