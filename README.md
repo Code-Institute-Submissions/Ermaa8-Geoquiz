@@ -74,7 +74,7 @@ Table of content
  - Wireframes were produced using Balsamiq.
  <details>
 
- <summary>Desktop Wireframe</summary>
+ <summary>Desktop wireframe</summary>
  
  ![Desktop Wireframe](assets/images/tinified(4)/wireframe1.png)
   </details>
