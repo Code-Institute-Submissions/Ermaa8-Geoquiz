@@ -43,6 +43,7 @@ Table of content
  - Ivoke a sence of urgency to complete the game as quick as possible.
  - To get the user answer as many rights as possible.
  - To present the user with a website that is visually appealing.
+ - To make it easier for people to learn.
 
  ## User Stories
  
