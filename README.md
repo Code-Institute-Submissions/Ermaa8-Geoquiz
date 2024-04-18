@@ -99,7 +99,7 @@ Table of content
 - The rules part of the quiz contains a 5 rules that are necessary to follow for the best experience. A user can not start a quiz before reading a rules.
 
 ### Quiz Selection
-- Quiz selection contains of 12 questions in total. A user will have 10 seconds to answer each question. 
+- Quiz selection contains of 12 questions in total. A user will have 25 seconds to answer each question. 
 - If user answe right to the question, the correct score will be higher and if user answers fail the incorrect score will be higher. When quiz is over, score area appears and shows how many correct and how many incorrect answers user had.
 
 ![Quiz Questions](assets/images/Bilder/questionpic.png)
