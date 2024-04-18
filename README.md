@@ -3,10 +3,38 @@
 The Geography Quiz is a fun educational quiz for everyone. The aim of the quiz is to answer a questions about different countries. In this quiz there is 12 questions and every question has 4 answer options. Questions are about different simbols in countries, capital cities etc...
 This quiz is fun to strengthen current knowledge and maybe learn something new about other country.
 
-The live link can be found here - [The Animal asotiation game]()
+The live link can be found here - [Geography Quiz]()
 
 Table of content
  * [Site Owner Goals](#site-owner-goals)
+ * [User Stories](#user-stories)
+    + [First Time User](#first-time-user)
+    + [Returning user](#returning-user)
+    + [Frequent user](#frequent-user)
+ * [Design](#design)
+    + [Fonts](#fonts)
+    + [Layout](#layout)
+    + [Wireframes](#wireframes)
+ * [Features](#features)
+    + [Home Page](#home-page)
+    + [Rules Page](#rules-page)
+    + [Quiz selection](#quiz-selection)
+ * [Testing](#testing)
+    + [Validator Testing](#validator-testing)
+      - [HTML](#html)
+      - [CSS](#css)
+      - [Javascript](#javascript)
+      - [Accessibility](#accessibility)
+    + [Button Testing](#button-testing)
+    + [Game Testing](#game-testing)
+    + [Browser Testing](#browser-testing)
+    + [Fixed Bugs](#fixed-bugs)
+ * [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+ * [Deployments](#deployments)
+ * [Acknowledgments](#acknowledgments)
+ 
 
  ## Site owner goals
  - To provide the user an easy to navigate the quiz that is fun and educational.
@@ -85,7 +113,7 @@ Table of content
 - All buttons were tested manually to make sure that user is directed to the right section of the quiz.
 
 ### Quiz Testing
-- The quiz was tested by friends to make sure that everything worked as intended including a few things:
+ - The quiz was tested by friends to make sure that everything worked as intended including a few things:
  - The rules area appears first.
  - That queston area appears after and timer start when first question is up.
  - The score area appears after quiz is over.
