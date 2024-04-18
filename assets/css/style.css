@@ -1,11 +1,8 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
 
-
-
 /* Reset default styles added by the browser */
 * {
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -25,8 +22,6 @@ body {
     font-family: "Sedan", sans-serif;
 }
 
-
-
 .hidden {
     display: none;
 }
@@ -43,7 +38,7 @@ body {
 
 h1 {
     font-family: "Salsa", sans-serif;
-    font-size: 2.5 rem;
+    font-size: 2.5rem;
     color: #82820f;
     padding: 5px 0;
     margin: 0;
@@ -194,8 +189,6 @@ h1 {
     /* Keep the element on top of the other elements */
     box-shadow: 0 3px 5px 1px rgba(58, 58, 58, 0.3);
 }
-
-
 
 /* Question Counter */
 .quiz-box header .question-count {
@@ -428,7 +421,7 @@ footer .current-score span {
 }
 
 .result-box .buttons button {
-    font-family: "Salsa" sans-serif;
+    font-family: "Salsa", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     color: #faebd7;
@@ -476,27 +469,6 @@ footer .current-score span {
 .copywrite {
     font-size: 0.9rem;
     font-weight: bold;
-}
-
-/* Keyframe animation for a shaking effect 
-*/
-@keyframes shake {
-    /* At 10% and 90% of the animation duration, translate the element to the left by 1px */
-    10% 90% {
-        transform: translate3d(-1px, 0, 0);
-    }
-    /* At 20% and 80%, translate the element to the right by 2px */
-    20% 80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    /* At 30%, 50%, and 70%, translate the element to the left by 4px */
-    30% 50% 70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-    /* At 40% and 60% translate the element to the right by 4px */
-    40% 60% {
-        transform: translate3d(-4px, 0, 0);
-    }
 }
 
 .apply-shake {

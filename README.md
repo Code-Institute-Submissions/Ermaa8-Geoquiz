@@ -5,6 +5,8 @@ This quiz is fun to strengthen current knowledge and maybe learn something new a
 
 The live link can be found here - [Geography Quiz](https://8000-ermaa8-geoquiz-18a7owhkze8.ws-eu110.gitpod.io/index.html)
 
+![Gym Club Am I Responsive Image](assets/images/Bilder/desktoppicture.png)
+
 Table of content
  * [Site Owner Goals](#site-owner-goals)
  * [User Stories](#user-stories)
@@ -58,7 +60,7 @@ Table of content
  ## Design
  - The quiz backround picture represents a world and it is suitable picture because it is a geography quiz. There is four answers alternatives and all of them are in a box that turs a green colour when a user want to click on the answer alternative. 
 
- ![Front side](assets/images/Bilder/startpage.png.png)
+ ![Front side](assets/images/Bilder/startpage.png)
 
  ### Fonts
  - Sedan is the font that is used throught the whole website. The font is imported via [Google Fonts](https://fonts.google.com/). Sans Serif is font that is used as a backup font in case that the main font is not imported into the site correctly.
@@ -69,7 +71,7 @@ Table of content
  - Start button
  - Rules for the game
  - Play area
- - Score area
+ - Game over area
 
  ### Wireframes
 
@@ -87,8 +89,6 @@ Table of content
  ![Mobile Wireframe](assets/images/Bilder/wireframe2.png)
   </details>
 
-
-
  ## Features
 
 ### Home Page
@@ -102,14 +102,27 @@ Table of content
 - Quiz selection contains of 12 questions in total. A user will have 10 seconds to answer each question. 
 - If user answe right to the question, the correct score will be higher and if user answers fail the incorrect score will be higher. When quiz is over, score area appears and shows how many correct and how many incorrect answers user had.
 
+![Quiz Questions](assets/images/Bilder/questionpic.png)
+
+### Game Over Area
+- Game over area contains of incorrect and correct results as well as a time score and restart button.
+
+![Score Area](assets/images/Bilder/scorearea.png)
+
 ## Testing
 
 ### Validator Testing
 - #### HTML
+ - [W3C Validator Results](https://validator.w3.org/nu/#textarea)
 - #### CSS
+ - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator)
 - #### Javascript
+No errors were found.
+![JavaScript](assets/images/Bilder/javatest.png)
 
 ### Accessibility 
+
+![Accessibiity](assets/images/Bilder/accessibility.png)
 
 ### Button Testing
 - All buttons were tested manually to make sure that user is directed to the right section of the quiz.
@@ -124,6 +137,9 @@ Table of content
 - The website was tested on different browsers like Google Chrome, Firefox and Microsoft Edge with no issues noted.
 
 ### Fixed Bugs
+@keyframe in the style css showed error in the validator and with mentors help I got information that this part is not necessary and it was easy fixed with removing this part from the style css.
+
+function checkAnswer(event) in the script.js used a colours when answer is pressed just to show which one is right and which one is right. The parantess was necessary to use for the colours and not sign equal to ('green).
 
 ## Technologies Used
 ### Languages
@@ -140,6 +156,8 @@ Table of content
 - [Cosmopolitan magasine](https://www.cosmopolitan.com/)
 - [Am I Responsive](http://ami.responsivedesign.is/)
 - [W3C](https://www.w3.org/) 
+- [Javascript](https://jshint.com/)
+- [W3C CSS](https://jigsaw.w3.org/css-validator/)
 - [TinyPNG](https://tinypng.com/) 
 
 ## Deployment

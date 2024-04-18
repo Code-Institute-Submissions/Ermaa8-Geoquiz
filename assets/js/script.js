@@ -151,15 +151,12 @@ function shuffle(array) {
 
 }
 
-
 function gameOver(){
     document.getElementById('correct-score-final').innerText = currentScore;
     document.getElementById('incorrect-score-final').innerText = currentIncorrectScore;
     quizContainer.classList.add('hidden');
     gameOverModal.classList.remove('hidden');
 }
-
-
 
 function getNextQuestion() {
     if (currentQuestionIndex < maxQuestions) {
