@@ -137,9 +137,9 @@ No errors were found.
 - The website was tested on different browsers like Google Chrome, Firefox and Microsoft Edge with no issues noted.
 
 ### Fixed Bugs
-@keyframe in the style css showed error in the validator and with mentors help I got information that this part is not necessary and it was easy fixed with removing this part from the style css.
+- @keyframe in the style css showed error in the validator and with mentors help I got information that this part is not necessary and it was easy fixed with removing this part from the style css.
 
-function checkAnswer(event) in the script.js used a colours when answer is pressed just to show which one is right and which one is right. The parantess was necessary to use for the colours and not sign equal to ('green).
+- function checkAnswer(event) in the script.js used a colours when answer is pressed just to show which one is right and which one is right. The parantess was necessary to use for the colours and not sign equal to ('green).
 
 ## Technologies Used
 ### Languages
