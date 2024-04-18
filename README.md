@@ -43,15 +43,17 @@ Table of content
 
  ### Wireframes
 
- Wireframes were produced using Balsamiq.
+ - Wireframes were produced using Balsamiq.
  <details>
 
  <summary>Desktop Wireframe</summary>
+ 
  ![Desktop Wireframe](assets/images/tinified(4)/wireframe1.png)
   </details>
 
  <details>
  <summary>Mobile wireframe</summary>
+ 
  ![Mobile Wireframe](assets/images/tinified(4)/wireframe2.png)
   </details>
 
