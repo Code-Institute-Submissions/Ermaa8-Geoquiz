@@ -50,9 +50,11 @@ Table of content
 - When rules are read there is option to continue or to exit a quiz.
 
 ### Rules Page
-- The rules part of the quiz contains a 5 rules that are necessary to follow for the best experience. 
+- The rules part of the quiz contains a 5 rules that are necessary to follow for the best experience. A user can not start a quiz before reading a rules.
 
 ### Quiz Selection
+- Quiz selection contains of 12 questions in total. A user will have 10 seconds to answer each question. 
+- If user answe right to the question, the correct score will be higher and if user answers fail the incorrect score will be higher. When quiz is over, score area appears and shows how many correct and how many incorrect answers user had.
 
 ## Testing
 
@@ -64,10 +66,16 @@ Table of content
 ### Accessibility 
 
 ### Button Testing
+- All buttons were tested manually to make sure that user is directed to the right section of the quiz.
 
-### Game Testing
+### Quiz Testing
+- The quiz was tested by friends to make sure that everything worked as intended including a few things:
+ - The rules area appears first.
+ - That queston area appears after and timer start when first question is up.
+ - The score area appears after quiz is over.
 
 ### Browser Testing
+- The website was tested on different browsers like Google Chrome, Firefox and Microsoft Edge with no issues noted.
 
 ### Fixed Bugs
 
@@ -82,3 +90,5 @@ Table of content
 ## Deployment
 
 ## Acknowledgments
+My mentor Antonio for his help and support.
+Slack community for tips and tricks.
