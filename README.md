@@ -1,4 +1,4 @@
-#The Geography Quiz
+# The Geography Quiz
 
 The Geography Quiz is a fun educational quiz for everyone. The aim of the quiz is to answer a questions about different countries. In this quiz there is 12 questions and every question has 4 answer options. Questions are about different simbols in countries, capital cities etc...
 This quiz is fun to strengthen current knowledge and maybe learn something new about other country.
@@ -28,19 +28,29 @@ Table of content
  - As a frequent user I want to beat my score.
 
  ## Design
- - The quiz design is fun
+ - The quiz backround picture represents a world and it is suitable picture because it is a geography quiz. There is four answers alternatives and all of them are in a box that turs a green colour when a user want to click on the answer alternative. 
 
  ### Fonts
+ - Sedan is the font that is used throught the whole website. The font is imported via [Google Fonts](https://fonts.google.com/). Sans Serif is font that is used as a backup font in case that the main font is not imported into the site correctly.
 
  ### Layout
+ Geography quiz have a 5 sections:
+ - Title area
+ - Start button
+ - Rules for the game
+ - Play area
+ - Score area
 
  ### Wireframes
 
  ## Features
 
 ### Home Page
+- The landing page of the game have very simple layout that makes easy to users to start a quixz and read a rules.
+- When rules are read there is option to continue or to exit a quiz.
 
-### Rues Page
+### Rules Page
+- The rules part of the quiz contains a 5 rules that are necessary to follow for the best experience. 
 
 ### Quiz Selection
 
@@ -63,9 +73,9 @@ Table of content
 
 ## Technologies Used
 ### Languages
--HTML
--CSS
--JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ### Frameworks - Libraries - Programs Used
 
