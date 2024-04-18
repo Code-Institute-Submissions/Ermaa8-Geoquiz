@@ -43,6 +43,20 @@ Table of content
 
  ### Wireframes
 
+ Wireframes were produced using Balsamiq.
+ <details>
+
+ <summary>Desktop Wireframe</summary>
+ ![Desktop Wireframe](assets/images/tinified(4)/wireframe1.png)
+  </details>
+
+ <details>
+ <summary>Mobile wireframe</summary>
+ ![Mobile Wireframe](assets/images/tinified(4)/wireframe2.png)
+  </details>
+
+
+
  ## Features
 
 ### Home Page
@@ -87,8 +101,26 @@ Table of content
 
 ### Frameworks - Libraries - Programs Used
 
+- [Balsamiq](https://balsamiq.com/) 
+- [GitHub](https://github.com/) 
+- [Google Fonts](https://fonts.google.com/)
+- [Favicon Converter](https://favicon.io/favicon-converter/) 
+- [Cosmopolitan magasine](https://www.cosmopolitan.com/)
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [W3C](https://www.w3.org/) 
+- [TinyPNG](https://tinypng.com/) 
+
 ## Deployment
 
+The site was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+1. Go to repository on Github.com.
+2. Select 'settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left on the page.
+4. Select 'Branch' dropdown menu and select the main branch.
+5. Once selected, click 'Save'.
+6. Deployment should be confirmed by a message on a right sid on GitHub. 
+
+
 ## Acknowledgments
-My mentor Antonio for his help and support.
+My mentor Antonio for his help and support and
 Slack community for tips and tricks.
