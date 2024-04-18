@@ -1,104 +1,265 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--SEO-->
+
     <meta name="description" content="Test your knowlege of geography with this fun and educational quiz.">
+
     <meta name="keywords" content="geography, world, knowledge, quiz, game, education">
+
     <meta name="author" content="Erma Zunic">
+
     <!--Favicon-->
+
     <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon_io-16x16.png">
+
     <!--Google fonts-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
     <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+
     <!--CSS-->
+
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Geo.quiz</title>
+
 </head>
 
+
+
 <body>
+
     <!--HEADING-->
+
     <div class="title-container">
+
         <h1 class="title">Geography quiz</h1>
+
     </div>
+
     <!--INFO BOX-->
+
     <div class="info-box" id="info-list">
+
         <div class="info-title">
+
             <span>Rules of the Quiz</span>
+
         </div>
+
+
 
         <!--List containing the rules-->
+
         <div class="info-list">
+
             <div class="info">
+
                 <span class="info-num">1.</span>
+
                 <span>10 seconds</span>
+
                 is all the time you've got to answer, per each question.
+
             </div>
+
             <div class="info">
+
                 <span class="info-num">2.</span>
+
                 Once the clock runs out, you can't make any changes.
+
                 <br>
+
                 <span>Choose wisely!</span>
+
             </div>
+
             <div class="info">
+
                 <span class="info-num">3.</span>
+
                 Once you've selected your answer,
+
                 <span>there's no going back.</span>
+
             </div>
+
             <div class="info">
+
                 <span class="info-num">4.</span>
+
                 No escape routes here! You can
+
                 <span>not exit</span>
+
                 from the Quiz while you're playing.
+
             </div>
+
             <div class="info">
+
                 <span class="info-num">5.</span>
+
                 Score big by nailing those correct answers! -
+
                 <span>Let the quiz begin!</span>
+
             </div>
+
         </div>
+
         <div class="start-btn">
+
             <button id="start-btn">Start Quiz</button>
+
         </div>
+
     </div>
+
+    <div class="info-box hidden" id="gameover">
+
+        <div class="info-title">
+
+            <span>Game Over</span>
+
+        </div>
+
+
+
+        <!--List containing the rules-->
+
+        <div class="info-list">
+
+            <div class="info">
+
+                <span class="info-num">Score:</span>
+
+                <p>Correct: <span id="correct-score-final"></span></p>
+
+                <p>InCorrect: <span id="incorrect-score-final"></span></p>
+
+            </div>
+
+            <div class="info">
+
+                <span class="info-num">Time:</span>
+
+                <p><span id="timer-final"></span> Seconds</p>
+
+            </div>
+
+        </div>
+
+        <div class="start-btn">
+
+            <a href="./index.html">Restart Quiz</a>
+
+        </div>
+
+    </div>
+
     <div class="quiz-container hidden" id="quiz-container">
+
         <!--Display the question from JS-->
+
         <h2 id="question">Question displayed</h2>
+
         <div class="answer-options">
+
             <!--Display answer options from JS-->
+
             <button class="answer-btn" id="option1" data-index="0">Answer 1</button>
+
             <button class="answer-btn" id="option2" data-index="1">Answer 2</button>
+
             <button class="answer-btn" id="option3" data-index="2">Answer 3</button>
+
             <button class="answer-btn" id="option4" data-index="3">Answer 4</button>
+
         </div>
-        <div class="current-score">
+
+        <div class="Timer">
+
             <!--Display current score from JS-->
+
             <p class="scores">
+
+                Timer
+
+                <span id="timer">25</span> Seconds
+
+            </p>
+
+        
+
+        </div>
+
+        <div class="current-score">
+
+            <!--Display current score from JS-->
+
+            <p class="scores">
+
                 Correct
+
                 <span id="correct-score">0</span>
+
             </p>
+
             <p class="scores">
+
                 Incorrect
+
                 <span id="incorrect-score">0</span>
+
             </p>
+
         </div>
+
     </div>
+
     <!--Footer-->
+
     <footer class="page-footer">
+
         <div class="copywrite">
+
             <p>Erma Zunic</p>
+
             <p>Thank you for joining my Quiz!</p>
+
         </div>
+
     </footer>
+
     <!--Javascript files-->
+
     <script src="assets/js/script.js" defer></script>
 
+
+
 </body>
+
+
 
 </html>
