@@ -58,7 +58,7 @@ Table of content
  ## Design
  - The quiz backround picture represents a world and it is suitable picture because it is a geography quiz. There is four answers alternatives and all of them are in a box that turs a green colour when a user want to click on the answer alternative. 
 
- ![Front side](assets/images/picture1.png)
+ ![Front side](assets/images/Bilder/startpage.png.png)
 
  ### Fonts
  - Sedan is the font that is used throught the whole website. The font is imported via [Google Fonts](https://fonts.google.com/). Sans Serif is font that is used as a backup font in case that the main font is not imported into the site correctly.
@@ -78,13 +78,13 @@ Table of content
 
  <summary>Desktop wireframe</summary>
  
- ![Desktop Wireframe](assets/images/tinified(4)/wireframe1.png)
+ ![Desktop Wireframe](assets/images/Bilder/wireframe1.png)
   </details>
 
  <details>
  <summary>Mobile wireframe</summary>
  
- ![Mobile Wireframe](assets/images/tinified(4)/wireframe2.png)
+ ![Mobile Wireframe](assets/images/Bilder/wireframe2.png)
   </details>
 
 
