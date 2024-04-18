@@ -3,7 +3,7 @@
 The Geography Quiz is a fun educational quiz for everyone. The aim of the quiz is to answer a questions about different countries. In this quiz there is 12 questions and every question has 4 answer options. Questions are about different simbols in countries, capital cities etc...
 This quiz is fun to strengthen current knowledge and maybe learn something new about other country.
 
-The live link can be found here - [Geography Quiz]()
+The live link can be found here - [Geography Quiz](https://8000-ermaa8-geoquiz-18a7owhkze8.ws-eu110.gitpod.io/index.html)
 
 Table of content
  * [Site Owner Goals](#site-owner-goals)
@@ -57,6 +57,8 @@ Table of content
 
  ## Design
  - The quiz backround picture represents a world and it is suitable picture because it is a geography quiz. There is four answers alternatives and all of them are in a box that turs a green colour when a user want to click on the answer alternative. 
+
+ ![Front side](assets/images/picture1.png)
 
  ### Fonts
  - Sedan is the font that is used throught the whole website. The font is imported via [Google Fonts](https://fonts.google.com/). Sans Serif is font that is used as a backup font in case that the main font is not imported into the site correctly.
