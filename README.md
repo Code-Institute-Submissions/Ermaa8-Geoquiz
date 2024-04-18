@@ -113,7 +113,7 @@ Table of content
 
 ### Validator Testing
 - #### HTML
- - [W3C Validator Results](https://validator.w3.org/nu/#textarea)
+ - [W3C Validator Results](Validator.nu/LV https://validator.w3.org/services)
 - #### CSS
  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator)
 - #### Javascript
